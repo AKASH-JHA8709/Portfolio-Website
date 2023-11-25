@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Jha - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </body>
+
+
+   
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Akash Jha</h1>
+        <H4>SOFTWARE DEVELOPER</H4>
+
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="BG">
+        <section id="home">
+            <h1 id="welcome-text"></h1>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <p>
+                            Hello, I'm Akash Jha, a passionate web developer based in Cuttack,Odisha. I specialize in
+                            front-end
+                            technologies like HTML, CSS, and JavaScript. With a keen eye for design and a love for
+                            coding, I strive to
+                            create engaging and user-friendly websites.
+                        </p>
+                        <p>
+                            In addition to web development, I have experience in Java development. My goal is to
+                            continuously learn and
+                            grow in the ever-evolving field of technology.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="img/BG.PNG.jpg" alt="" height="100px" width="100PX">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <h3><strong>Qualification</strong></h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution</th>
+                        <TH>Board</TH>
+                        <th>Year</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech</td>
+                        <td>DRIEMS College</td>
+                        <td>BPUT</td>
+                        <td>2021-2025</td>
+                        <td>9.5</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>DAV Public School</td>
+                        <td>CBSE</td>
+                        <td>2019-2021</td>
+                        <td>84%</td>
+                    </tr>
+                    <tr>
+                        <td>Matriculation</td>
+                        <td>DAV Public School</td>
+                        <td>CBSE</td>
+                        <td>2019</td>
+                        <td>92%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <H2><strong>Skills</strong></H2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="img/hTml.pNG" alt="HTML Icon">
+                    HTML
+                </div>
+                <div class="skill">
+                    <img src="img/css.png" alt="CSS Icon">
+                    CSS
+                </div>
+                <div class="skill">
+                    <img src="img/js.PnG" alt="JavaScript Icon">
+                    JavaScript
+                </div>
+
+                <DIV class="skill">
+                    <img src="img/java.png" alt="Java Icon">
+                    Java
+                </DIV>
+
+
+
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <h2>Java Devloper</h2>
+            <p>Developed multiple java projects </p>
+            <a href="https://github.com/AKASH-JHA8709/CodeAlpha-Student-Grade-Tracker">Click here</a>
+            <a href="https://github.com/AKASH-JHA8709/CodeAlpha">Click here</a>
+            <a href="https://github.com/AKASH-JHA8709/CodeAlpha3">Click here</a>
+            
+
+        </section>
+
+        
+    </div>
+
+    <footer id="Contact">
+        <h1>Contact Me </h1>
+
+
+        <p>
+            Feel free to reach out to me through the following channels:
+        </p>
+        <ul>
+            <li>Phone: <a href="tel:8709646593">8709646593</a></li>
+            <li>Email: <a href="mailto:akj8709@gmail.com">akj8709@gmail.com</a></li>
+            <li>LinkedIn: <a
+                    href="https://www.linkedin.com/in/akash-jha-232953227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li>Address: Cuttack,Odisha, India</li>
+        </ul>
+        <!-- Add more content or sections as needed -->
+
+    </footer>
+    <script>
+        const welcomeText = "Welcome to my portfolio!";
+        const delay = 100; // Adjust the delay between lines (in milliseconds)
+        let index = 0;
+
+        function displayText() {
+            const line = welcomeText.substring(0, index);
+            document.getElementById("welcome-text").textContent = line;
+            index++;
+
+            if (index <= welcomeText.length) {
+                setTimeout(displayText, delay);
+            }
+        }
+
+        // Start the animation
+        displayText();
+    </script>
+
+
+</body>
+
+</html>
